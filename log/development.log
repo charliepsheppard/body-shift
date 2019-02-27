@@ -1117,3 +1117,11 @@ Processing by MealsController#index as HTML
 Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 3.7ms)
 
 
+Started GET "/workouts/" for 127.0.0.1 at 2019-02-27 12:04:11 -0500
+Processing by WorkoutsController#index as */*
+  Parameters: {"activity"=>"Test", "description"=>"Fakeeeeeee", "duration"=>30, "workout"=>{"activity"=>"Test", "description"=>"Fakeeeeeee", "duration"=>30}}
+  [1m[36mWorkout Load (2.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 13ms (Views: 2.7ms | ActiveRecord: 10.0ms)
+
+
