@@ -2,11 +2,15 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 
 const Header = () => {
-    <header>
-        <nav>
-
-        </nav>
-    </header>
+    return(
+        <header>
+            <nav>
+                <Link to='/home'>Home</Link>
+                <Link to='/meals'>Meals</Link>
+                <Link to='/workouts'>Workouts</Link>
+            </nav>
+        </header>
+    )
 }
 
 export default Header

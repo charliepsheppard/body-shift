@@ -3,6 +3,15 @@ import './App.css';
 import axios from 'axios'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import Header from '../Header/Header'
+import Login from '../Login/Login'
+import Home from '../Home/Home'
+import MealsList from '../MealsList/MealsList'
+import WorkoutsList from '../WorkoutsList/WorkoutsList'
+import AddMeal from '../AddMeal/AddMeal'
+import AddWorkout from '../AddWorkout/AddWorkout'
+import SingleMeal from '../SingleMeal/SingleMeal'
+import SingleWorkout from '../SingleWorkout/SingleWorkout'
+
 
 class App extends Component {
   constructor() {
@@ -92,11 +101,11 @@ class App extends Component {
           />
           <Route 
             path='/add-meal'
-            component={addMeal}
+            component={AddMeal}
           />
           <Route 
             path='/add-workout'
-            component={addWorkout}
+            component={AddWorkout}
           />
           <Route 
             path='/meals/:id'
