@@ -17,7 +17,7 @@ class MealsController < ApplicationController
 
   def create
     begin
-      meal = Movie.create(meal_params)
+      meal = Meal.create(meal_params)
       render json: {meal: meal}, status: 201
     rescue Exception
       server_error

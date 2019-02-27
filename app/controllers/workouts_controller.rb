@@ -27,7 +27,7 @@ class WorkoutsController < ApplicationController
   def update
     begin
       workout = Workout.find(params[:id])
-      workout.set_attributes(workout_params)
+      workout.update_attributes(workout_params)
       render json: {workout: workout}, status: 200
     rescue ActiveRecord::RecordNotFound
       not_found
@@ -48,10 +48,10 @@ class WorkoutsController < ApplicationController
   end
 
   def server_error
-    render json; {message: "internal server error"}, status: 500
+    render json: {message: "internal server error"}, status: 500
   end
 
   def workout_params
-    params.require(:workout).permit(:name, :email, :password)
+    params.require(:workout).permit(:activity, :description, :duration)
   end
 end
