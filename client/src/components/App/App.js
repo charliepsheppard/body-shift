@@ -20,7 +20,9 @@ class App extends Component {
       mealId: '',
       meals: [],
       workoutId: '',
-      workouts: []
+      workouts: [],
+      selectedMeal: '',
+      selectedWorkout: ''
     }
   }
 
@@ -61,23 +63,6 @@ class App extends Component {
     })
   }
 
-  // this.state.meals.map(meal => {
-  //   return (
-  //     <div>
-  //       <h4 key={meal.id}>{meal.name}</h4>
-
-  //     </div>
-  //   )
-  // })
-
-  // this.state.workouts.map(workout => {
-  //   return(
-  //     <div>
-  //       <h4 key={workout.id}>{workout.activity}</h4>
-  //     </div>
-  //   )
-  // })
-
   render() {
     return (
       <div className="App">
@@ -93,11 +78,11 @@ class App extends Component {
           />
           <Route 
             path='/meals'
-            render={() => (<MealsList />)}
+            render={() => (<MealsList meals={this.state.meals} />)}
           />
           <Route 
             path='/workouts'
-            render={() => (<WorkoutsList />)}
+            render={() => (<WorkoutsList workouts={this.state.workouts} />)}
           />
           <Route 
             path='/add-meal'
