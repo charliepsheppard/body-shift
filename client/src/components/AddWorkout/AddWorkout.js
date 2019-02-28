@@ -8,7 +8,8 @@ class AddWorkout extends Component {
         this.state = {
             activity: '',
             description: '',
-            duration: 0
+            duration: 0,
+            submitted: false
         }
     }
 
@@ -22,12 +23,27 @@ class AddWorkout extends Component {
         })
     } 
 
+    // checkSubmittedForm = () => {
+    //     if (this.state.submitted == true) {
+    //         return (
+    //         <Redirect to='/workouts' />
+    //         )
+    //     }
+    // }
+
     handleSubmit = (e) => {
         e.preventDefault()
         this.addWorkout()
+        this.setState({
+            submitted: true
+        })
     }
 
     render() {
+        const redirectToWorkouts = this.state.submitted
+        if (redirectToWorkouts == true) {
+            return <Redirect to='/workouts' />
+        }
         return(
             <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
                     <input type="text" name="activity" placeholder="Type" /> 

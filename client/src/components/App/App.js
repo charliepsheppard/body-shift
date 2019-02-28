@@ -78,11 +78,11 @@ class App extends Component {
           />
           <Route 
             path='/meals'
-            render={() => (<MealsList meals={this.state.meals} />)}
+            render={() => (<MealsList meals={this.state.meals} getMeals={this.getMealsData} />)}
           />
           <Route 
             path='/workouts'
-            render={() => (<WorkoutsList workouts={this.state.workouts} />)}
+            render={() => (<WorkoutsList workouts={this.state.workouts} getWorkouts={this.getWorkoutData} />)}
           />
           <Route 
             path='/add-meal'

@@ -10,7 +10,8 @@ class AddMeal extends Component {
             ingredients: '',
             prep: 0,
             cooktime: 0,
-            calories: 0
+            calories: 0,
+            submitted: false
         }
     }
 
@@ -27,9 +28,16 @@ class AddMeal extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         this.addMeal()
+        this.setState({
+            submitted: true
+        })
     }
 
     render() {
+        const redirectToMeals = this.state.submitted
+        if (redirectToMeals == true) {
+            return <Redirect to='/meals' />
+        }
         return(
             <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
                 <input type="text" name="name" placeholder="Name" />   

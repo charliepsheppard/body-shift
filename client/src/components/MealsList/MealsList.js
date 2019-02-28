@@ -5,8 +5,8 @@ const MealsList = (props) => {
     const meals = props.meals.map((meal, key) => {
         return (
             <div key={key}>
-                <h4 key={meal.id}>{meal.name}</h4>
-                <Link to='/add-meal'><button>Edit</button></Link>
+                {meal.name}
+                {/* <Link to='/add-meal'><button>Edit</button></Link> */}
             </div>
         )
     })
