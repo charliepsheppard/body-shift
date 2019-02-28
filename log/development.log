@@ -1558,3 +1558,1230 @@ Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 4.0ms)
 Completed 200 OK in 19ms (Views: 3.7ms | ActiveRecord: 15.5ms)
 
 
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:09:31 -0500
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:09:31 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (1.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mMeal Load (0.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 44ms (Views: 16.7ms | ActiveRecord: 21.1ms)
+
+
+Completed 200 OK in 57ms (Views: 14.5ms | ActiveRecord: 36.3ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:14:22 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:14:22 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (1.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mWorkout Load (2.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:16:27 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:16:27 -0500
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 7.7ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:22:30 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:22:30 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  [1m[36mMeal Load (0.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 3.9ms)
+
+
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:28:38 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:28:38 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (0.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 3.3ms)
+
+
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:29:17 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:29:17 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (0.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:29:40 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:29:40 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (2.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+  [1m[36mWorkout Load (1.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 2.8ms)
+
+
+Completed 200 OK in 9ms (Views: 2.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:29:45 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:29:45 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (2.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:29:54 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:29:54 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mMeal Load (5.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:43:10 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:43:10 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  [1m[36mMeal Load (1.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 3.4ms)
+
+
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:46:04 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:46:04 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mMeal Load (8.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 12ms (Views: 3.0ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:47:05 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:47:05 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:50:17 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:50:17 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (6.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 10ms (Views: 3.5ms | ActiveRecord: 6.8ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (8.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 12ms (Views: 3.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:50:32 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:50:32 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (12.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 14ms (Views: 1.9ms | ActiveRecord: 12.3ms)
+
+
+  [1m[36mMeal Load (23.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 36ms (Views: 2.7ms | ActiveRecord: 33.2ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:52:49 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:52:49 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (0.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mWorkout Load (2.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/meals" for ::1 at 2019-02-28 09:53:04 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:53:37 -0500
+Processing by MealsController#index as HTML
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:53:37 -0500
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (1.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/meals" for ::1 at 2019-02-28 09:53:45 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/meals" for ::1 at 2019-02-28 09:53:50 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/meals" for ::1 at 2019-02-28 09:54:17 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:54:45 -0500
+Processing by MealsController#index as */*
+  Parameters: {"activity"=>"Test", "description"=>"Fakeeeeeee", "duration"=>30, "meal"=>{}}
+  [1m[36mMeal Load (19.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 22ms (Views: 2.1ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:56:07 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:56:07 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (2.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 2.6ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/meals" for 127.0.0.1 at 2019-02-28 09:56:26 -0500
+Processing by MealsController#create as HTML
+  Parameters: {"name"=>"Baked potato", "ingredients"=>"butter n shit", "prep"=>"10", "cooktime"=>"20", "calories"=>"100", "meal"=>{"name"=>"Baked potato", "ingredients"=>"butter n shit", "prep"=>"10", "cooktime"=>"20", "calories"=>"100"}}
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meals_controller.rb:20
+  [1m[36mMeal Create (12.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "ingredients", "prep", "cooktime", "calories", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Baked potato"], ["ingredients", "butter n shit"], ["prep", 10], ["cooktime", 20], ["calories", 100], ["created_at", "2019-02-28 14:56:26.364460"], ["updated_at", "2019-02-28 14:56:26.364460"]]
+  ↳ app/controllers/meals_controller.rb:20
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meals_controller.rb:20
+Completed 201 Created in 34ms (Views: 0.6ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/meals" for ::1 at 2019-02-28 09:56:36 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:58:20 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:58:20 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (1.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mWorkout Load (2.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:58:38 -0500
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:58:38 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (5.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 5.6ms)
+
+
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (7.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 09:58:47 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 09:58:47 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.7ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (3.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:40:16 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:40:16 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (11.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+  [1m[36mWorkout Load (9.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 33ms (Views: 16.1ms | ActiveRecord: 16.0ms)
+
+
+Completed 200 OK in 95ms (Views: 57.7ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+  
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:40:21 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:40:21 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (11.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 15ms (Views: 2.6ms | ActiveRecord: 11.6ms)
+
+
+  [1m[36mWorkout Load (12.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 16ms (Views: 3.3ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:22 -0500
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:22 -0500
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:22 -0500
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/helpers/esm/asyncToGenerator.js" for 127.0.0.1 at 2019-02-28 11:40:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/helpers/esm/asyncToGenerator.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/babel/runtime/node_modules/regenerator-runtime/runtime.js" for 127.0.0.1 at 2019-02-28 11:40:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/runtime/node_modules/regenerator-runtime/runtime.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:41:23 -0500
+Processing by MealsController#index as HTML
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:41:23 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (3.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+  [1m[36mWorkout Load (1.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 13ms (Views: 7.4ms | ActiveRecord: 5.6ms)
+
+
+Completed 200 OK in 12ms (Views: 2.6ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:41:37 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:41:37 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (3.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 3.5ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (2.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:41:48 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:41:48 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:43:04 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:43:04 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.4ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (4.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:44:15 -0500
+Processing by MealsController#index as HTML
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:44:15 -0500
+  [1m[36mMeal Load (18.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 22ms (Views: 3.1ms | ActiveRecord: 18.6ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:48:12 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:48:12 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (1.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:50:10 -0500
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:50:10 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (1.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mMeal Load (1.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:50:38 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:50:38 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (1.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mWorkout Load (2.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:51:32 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:51:32 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:52:04 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:52:04 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (1.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:53:35 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:53:35 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (3.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 3.6ms)
+
+
+  [1m[36mWorkout Load (5.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:54:00 -0500
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:54:00 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (2.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mWorkout Load (6.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:54:11 -0500
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:54:11 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (5.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 5.6ms)
+
+
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/workouts" for ::1 at 2019-02-28 11:54:23 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:54:53 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:54:53 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (16.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mMeal Load (14.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 19ms (Views: 2.3ms | ActiveRecord: 16.3ms)
+
+
+Completed 200 OK in 19ms (Views: 4.2ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:55:08 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.0ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:55:08 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (5.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 11:55:15 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 11:55:15 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.5ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (2.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2019-02-28 11:55:26 -0500
+Processing by WorkoutsController#create as HTML
+  Parameters: {"activity"=>"Test", "description"=>"Did some shit", "duration"=>"20", "workout"=>{"activity"=>"Test", "description"=>"Did some shit", "duration"=>"20"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:20
+  [1m[36mWorkout Create (2.6ms)[0m  [1m[32mINSERT INTO "workouts" ("activity", "description", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["activity", "Test"], ["description", "Did some shit"], ["duration", 20], ["created_at", "2019-02-28 16:55:26.330120"], ["updated_at", "2019-02-28 16:55:26.330120"]]
+  ↳ app/controllers/workouts_controller.rb:20
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:20
+Completed 201 Created in 9ms (Views: 0.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/workouts" for ::1 at 2019-02-28 11:55:31 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 13:25:50 -0500
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 13:25:50 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Processing by MealsController#index as HTML
+Completed 200 OK in 29ms (Views: 14.9ms | ActiveRecord: 10.3ms)
+
+
+  [1m[36mMeal Load (10.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 22ms (Views: 4.6ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 13:26:28 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 13:26:28 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (0.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mWorkout Load (4.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 13:27:08 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (1.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 11ms (Views: 3.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 13:27:08 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 13:28:48 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 13:28:48 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (4.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  [1m[36mMeal Load (8.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 12ms (Views: 3.3ms | ActiveRecord: 8.2ms)
+
+
+Completed 200 OK in 24ms (Views: 5.9ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 13:29:33 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 13:29:33 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (2.4ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 2.4ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 13:31:43 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.7ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 13:31:43 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (1.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2019-02-28 13:31:57 -0500
+Processing by WorkoutsController#create as HTML
+  Parameters: {"activity"=>"Somethin", "description"=>"something", "duration"=>"20", "workout"=>{"activity"=>"Somethin", "description"=>"something", "duration"=>"20"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:20
+  [1m[36mWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "workouts" ("activity", "description", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["activity", "Somethin"], ["description", "something"], ["duration", 20], ["created_at", "2019-02-28 18:31:57.279597"], ["updated_at", "2019-02-28 18:31:57.279597"]]
+  ↳ app/controllers/workouts_controller.rb:20
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:20
+Completed 201 Created in 14ms (Views: 0.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-02-28 13:32:10 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-02-28 13:32:10 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (5.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 5.1ms)
+
+
+  [1m[36mWorkout Load (8.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 8.0ms)
+
+

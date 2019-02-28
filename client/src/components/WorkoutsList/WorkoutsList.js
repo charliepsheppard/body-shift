@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 const WorkoutsList = (props) => {
     const workouts = props.workouts.map((workout, key) => {
@@ -9,7 +10,10 @@ const WorkoutsList = (props) => {
         )
     })
     return(
-        <h1>{workouts}</h1>
+        <div>
+            <Link to='/add-workout'><button>Add A Workout</button></Link>
+            <h1>{workouts}</h1>
+        </div>
     )
 }
 
