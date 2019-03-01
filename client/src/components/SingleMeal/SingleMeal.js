@@ -1,8 +1,13 @@
 import React, {Component} from 'react'
 
-const SingleMeal = () => {
+const SingleMeal = (props) => {
+    console.log(props.location.state.name)
     return(
-        <h1>SingleMeal</h1>
+        <div>
+            {/* <h1>{props.location.state.name}</h1> */}
+            {/* {props.location.state.content} */}
+            <h1>{props.location.state.name}</h1>
+        </div>
     )
 }
 

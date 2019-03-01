@@ -17,9 +17,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      mealId: '',
       meals: [],
-      workoutId: '',
       workouts: [],
       selectedMeal: '',
       selectedWorkout: ''
@@ -46,21 +44,23 @@ class App extends Component {
     }
   }
 
+  selectMeal = async (e) => {
+    try {
+        const resp = await axios.get(`/meals/${e.target.id}`)
+        const {meal} = resp.data
+        this.setState({
+            selectedMeal: meal
+        }) 
+    }catch(e) {
+        console.log(e.message)
+    }
+    console.log(this.state.selectedMeal)
+    
+}
+
   componentDidMount() {
     this.getMealsData()
     this.getWorkoutData()
-  }
-
-  mealId = (mealId) => {
-    this.setState({
-      mealId
-    })
-  }
-
-  workoutId = (workoutId) => {
-    this.setState({
-      workoutId
-    })
   }
 
   render() {
@@ -77,8 +77,12 @@ class App extends Component {
             render={() => (<Home />)}
           />
           <Route 
-            path='/meals'
-            render={() => (<MealsList meals={this.state.meals} getMeals={this.getMealsData} />)}
+            exact path='/meals'
+            render={() => (<MealsList 
+              meals={this.state.meals} 
+              getMeals={this.getMealsData} 
+              selectMeal={this.selectMeal}
+            />)}
           />
           <Route 
             path='/workouts'
@@ -94,11 +98,16 @@ class App extends Component {
           />
           <Route 
             path='/meals/:id'
-            render={() => (<SingleMeal />)}
+            render={(props) => (
+            <SingleMeal {...props} 
+              selectMeal={this.state.selectedMeal}
+            />)}
           />
           <Route 
             path='/workouts/:id'
-            render={() => (<SingleWorkout />)}
+            render={() => (<SingleWorkout
+              // selectWorkout={this.state.selectedMeal}
+            />)}
           />
         </Switch>  
       </div>

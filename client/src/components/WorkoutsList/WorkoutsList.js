@@ -5,9 +5,6 @@ import axios from 'axios'
 class WorkoutsList extends Component {
     constructor(props) {
         super(props)
-        // this.state = {
-        //     isLoaded: false
-        // }
         this.state = {
 
         }
