@@ -58,6 +58,7 @@ class WorkoutForm extends Component {
                     <input type="number" name="duration" placeholder="Duration" />    
                 <br />
                 <input type="submit" value="Submit" />
+                <button type="submit" value="edit"></button>
             </form>
         )    
     }
