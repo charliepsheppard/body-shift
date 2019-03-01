@@ -7,8 +7,8 @@ import Login from '../Login/Login'
 import Home from '../Home/Home'
 import MealsList from '../MealsList/MealsList'
 import WorkoutsList from '../WorkoutsList/WorkoutsList'
-import AddMeal from '../AddMeal/AddMeal'
-import AddWorkout from '../AddWorkout/AddWorkout'
+import MealForm from '../MealForm/MealForm'
+import WorkoutForm from '../WorkoutForm/WorkoutForm'
 import SingleMeal from '../SingleMeal/SingleMeal'
 import SingleWorkout from '../SingleWorkout/SingleWorkout'
 
@@ -104,11 +104,11 @@ class App extends Component {
           />
           <Route 
             path='/add-meal'
-            component={AddMeal}
+            component={MealForm}
           />
           <Route 
             path='/add-workout'
-            component={AddWorkout}
+            component={WorkoutForm}
           />
           <Route 
             path='/meals/:id'

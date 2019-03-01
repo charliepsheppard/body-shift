@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import axios from 'axios'
 
-class AddMeal extends Component {
+class MealForm extends Component {
     constructor() {
         super()
         this.state = {
@@ -57,4 +57,4 @@ class AddMeal extends Component {
     
 }
 
-export default AddMeal
+export default MealForm

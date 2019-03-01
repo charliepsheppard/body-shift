@@ -2,9 +2,9 @@ import React, {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import axios from 'axios'
 
-class AddWorkout extends Component {
-    constructor() {
-        super()
+class WorkoutForm extends Component {
+    constructor(props) {
+        super(props)
         this.state = {
             activity: '',
             description: '',
@@ -16,6 +16,10 @@ class AddWorkout extends Component {
     addWorkout = async () => {
         await axios.post('/workouts', this.state)
     } 
+
+    updateWorkout = async () => {
+        await axios.put(`/workouts/`)
+    }
 
     handleChange = (e) => {
         this.setState({
@@ -44,6 +48,7 @@ class AddWorkout extends Component {
         if (redirectToWorkouts == true) {
             return <Redirect to='/workouts' />
         }
+        console.log(this.state.editClicked)
         return(
             <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
                     <input type="text" name="activity" placeholder="Type" /> 
@@ -59,4 +64,4 @@ class AddWorkout extends Component {
     
 }
 
-export default AddWorkout
+export default WorkoutForm
