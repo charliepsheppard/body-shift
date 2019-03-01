@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
 
-const SingleWorkout = () => {
+const SingleWorkout = (props) => {
     return(
-        <h1>SingleWorkout</h1>
+        <div>
+            <h1>{props.location.state.activity}</h1>
+        </div>
     )
 }
 

@@ -4,9 +4,6 @@ import {Link} from 'react-router-dom'
 class MealsList extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            
-        }
     }
 
     render() {
@@ -19,8 +16,6 @@ class MealsList extends Component {
                         onClick={this.props.selectMeal}>
                     {meal.name}
                     </Link>
-                    
-                    {/* <Link to='/add-meal'><button>Edit</button></Link> */}
                 </div>
             )
         })

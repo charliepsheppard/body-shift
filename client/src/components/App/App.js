@@ -53,10 +53,20 @@ class App extends Component {
         }) 
     }catch(e) {
         console.log(e.message)
+    } 
+  }
+
+  selectWorkout = async (e) => {
+    try {
+      const resp = await axios.get(`/workouts/${e.target.id}`)
+      const {workout} = resp.data
+      this.setState({
+        selectedWorkout: workout
+      })
+    }catch(e) {
+      console.log(e.message)
     }
-    console.log(this.state.selectedMeal)
-    
-}
+  }
 
   componentDidMount() {
     this.getMealsData()
@@ -85,8 +95,12 @@ class App extends Component {
             />)}
           />
           <Route 
-            path='/workouts'
-            render={() => (<WorkoutsList workouts={this.state.workouts} getWorkouts={this.getWorkoutData} />)}
+            exact path='/workouts'
+            render={() => (<WorkoutsList 
+              workouts={this.state.workouts} 
+              getWorkouts={this.getWorkoutData} 
+              selectWorkout={this.selectWorkout}
+            />)}
           />
           <Route 
             path='/add-meal'
@@ -105,8 +119,9 @@ class App extends Component {
           />
           <Route 
             path='/workouts/:id'
-            render={() => (<SingleWorkout
-              // selectWorkout={this.state.selectedMeal}
+            render={(props) => (
+            <SingleWorkout {...props}
+              selectWorkout={this.state.selectedWorkout}
             />)}
           />
         </Switch>  

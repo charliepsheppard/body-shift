@@ -4,8 +4,6 @@ const SingleMeal = (props) => {
     console.log(props.location.state.name)
     return(
         <div>
-            {/* <h1>{props.location.state.name}</h1> */}
-            {/* {props.location.state.content} */}
             <h1>{props.location.state.name}</h1>
         </div>
     )

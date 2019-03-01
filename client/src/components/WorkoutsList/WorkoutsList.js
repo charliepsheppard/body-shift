@@ -9,16 +9,16 @@ class WorkoutsList extends Component {
 
         }
     }
-    
-    componentDidMount() {
-        
-    }
-
     render() {
         const workouts = this.props.workouts.map((workout, key) => {
             return(
                 <div key={key}>
-                    {workout.activity}
+                    <Link 
+                        id={workout.id}
+                        to={{pathname: `/workouts/${workout.id}`, state: workout}}
+                        onClick={this.props.selectWorkout}>
+                        {workout.activity}
+                    </Link>
                 </div>
             )
         })
