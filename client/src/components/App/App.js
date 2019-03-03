@@ -141,6 +141,7 @@ class App extends Component {
             render={(props) => (
             <SingleMeal {...props} 
               selectMeal={this.state.selectedMeal}
+              mealId={this.mealId}
             />)}
           />
           <Route 

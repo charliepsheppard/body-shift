@@ -7513,3 +7513,215 @@ Processing by WorkoutsController#index as HTML
 Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 16:47:12 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (4.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 16:47:12 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (2.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/workouts/3" for 127.0.0.1 at 2019-03-03 16:47:15 -0500
+Processing by WorkoutsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/workouts/12" for 127.0.0.1 at 2019-03-03 16:47:21 -0500
+Processing by WorkoutsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 16:54:42 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 16:54:42 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (5.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  [1m[36mMeal Load (6.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 17ms (Views: 6.0ms | ActiveRecord: 10.2ms)
+
+
+Completed 200 OK in 22ms (Views: 3.8ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/meals/4" for 127.0.0.1 at 2019-03-03 16:54:45 -0500
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMeal Load (2.6ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/meals_controller.rb:9
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 16:58:13 -0500
+Processing by MealsController#index as HTML
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 16:58:13 -0500
+  [1m[36mMeal Load (0.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (10.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 17ms (Views: 6.1ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 17:05:00 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 17:05:00 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (1.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  [1m[36mMeal Load (1.9ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 4.8ms)
+
+
+Completed 200 OK in 23ms (Views: 6.7ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 17:05:50 -0500
+Processing by MealsController#index as HTML
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 17:05:50 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (2.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/meals/7" for 127.0.0.1 at 2019-03-03 17:05:58 -0500
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/meals_controller.rb:9
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 17:17:35 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 17:17:35 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (0.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+  [1m[36mWorkout Load (1.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 3.7ms)
+
+
+Completed 200 OK in 14ms (Views: 5.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/meals/2" for 127.0.0.1 at 2019-03-03 17:17:38 -0500
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMeal Load (0.4ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/meals_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/meals/7" for 127.0.0.1 at 2019-03-03 17:17:49 -0500
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/meals_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 17:19:25 -0500
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 17:19:25 -0500
+Processing by WorkoutsController#index as HTML
+Processing by MealsController#index as HTML
+  [1m[36mWorkout Load (7.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  [1m[36mMeal Load (7.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 13ms (Views: 3.5ms | ActiveRecord: 9.7ms)
+
+
+Completed 200 OK in 20ms (Views: 5.8ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/meals/2" for 127.0.0.1 at 2019-03-03 17:19:26 -0500
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/meals_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/meals/7" for 127.0.0.1 at 2019-03-03 17:19:29 -0500
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/meals_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/workouts/7" for 127.0.0.1 at 2019-03-03 17:19:53 -0500
+Processing by WorkoutsController#update as HTML
+  Parameters: {"name"=>"Something new", "ingredients"=>"new", "prep"=>20, "cooktime"=>20, "calories"=>20, "id"=>"7", "workout"=>{}}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:29
+Completed 500 Internal Server Error in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 17:20:05 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 17:20:05 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (1.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/meals/7" for 127.0.0.1 at 2019-03-03 17:20:15 -0500
+Processing by MealsController#update as HTML
+  Parameters: {"name"=>"Something new", "ingredients"=>"new", "prep"=>20, "cooktime"=>20, "calories"=>20, "id"=>"7", "meal"=>{"name"=>"Something new", "ingredients"=>"new", "prep"=>20, "cooktime"=>20, "calories"=>20}}
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/meals_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meals_controller.rb:30
+  [1m[36mMeal Update (0.6ms)[0m  [1m[33mUPDATE "meals" SET "name" = $1, "ingredients" = $2, "updated_at" = $3 WHERE "meals"."id" = $4[0m  [["name", "Something new"], ["ingredients", "new"], ["updated_at", "2019-03-03 22:20:15.261355"], ["id", 7]]
+  ↳ app/controllers/meals_controller.rb:30
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meals_controller.rb:30
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/meals" for 127.0.0.1 at 2019-03-03 17:20:22 -0500
+Started GET "/workouts" for 127.0.0.1 at 2019-03-03 17:20:22 -0500
+Processing by MealsController#index as HTML
+Processing by WorkoutsController#index as HTML
+  [1m[36mMeal Load (2.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/meals_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 2.6ms)
+
+
+  [1m[36mWorkout Load (13.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:4
+Completed 200 OK in 20ms (Views: 6.5ms | ActiveRecord: 13.3ms)
+
+

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 
-class UpdateForm extends Component {
+class UpdateWorkoutForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -54,4 +54,4 @@ class UpdateForm extends Component {
     }
 }
  
-export default UpdateForm
+export default UpdateWorkoutForm

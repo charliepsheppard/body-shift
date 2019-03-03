@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import UpdateForm from '../UpdateForm/UpdateForm'
+import UpdateWorkoutForm from '../UpdateWorkoutForm/UpdateWorkoutForm'
 
 class SingleWorkout extends Component {
     constructor(props) {
@@ -30,7 +30,7 @@ class SingleWorkout extends Component {
                     
                 {/* </Link> */}
                 <div>
-                    <UpdateForm workoutToUpdate={this.props.location.state} />
+                    <UpdateWorkoutForm workoutToUpdate={this.props.location.state} />
                 </div>
             </div>
         )    
