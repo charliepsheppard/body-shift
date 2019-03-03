@@ -6,6 +6,7 @@ class WorkoutForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            propsCheck: this.props,
             activity: '',
             description: '',
             duration: 0,
@@ -15,10 +16,6 @@ class WorkoutForm extends Component {
 
     addWorkout = async () => {
         await axios.post('/workouts', this.state)
-    } 
-
-    updateWorkout = async () => {
-        await axios.put(`/workouts/`)
     }
 
     handleChange = (e) => {
@@ -35,7 +32,7 @@ class WorkoutForm extends Component {
     //     }
     // }
 
-    handleSubmit = (e) => {
+    handleNewWorkoutSubmit = (e) => {
         e.preventDefault()
         this.addWorkout()
         this.setState({
@@ -44,13 +41,28 @@ class WorkoutForm extends Component {
     }
 
     render() {
+        console.log(this.state)  
         const redirectToWorkouts = this.state.submitted
         if (redirectToWorkouts == true) {
             return <Redirect to='/workouts' />
         }
-        console.log(this.state.editClicked)
-        return(
-            <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
+        // const showDifferentForm = () => {
+        //         return(
+        //             <form onChange={this.handleChange} onSubmit={this.handleNewWorkoutSubmit}>
+        //                     <input type="text" name="activity" placeholder="Type" /> 
+        //                 <br />
+        //                     <textarea name="description" placeholder="Description" />    
+        //                 <br />
+        //                     <input type="number" name="duration" placeholder="Duration" />    
+        //                 <br />
+        //                 <input type="submit" value="Submit" />
+        //                 <button type="submit" value="Submit"></button>
+        //             </form>
+        //         )
+        //     }    
+        // }
+        return (
+            <form onChange={this.handleChange} onSubmit={this.handleNewWorkoutSubmit}>
                     <input type="text" name="activity" placeholder="Type" /> 
                 <br />
                     <textarea name="description" placeholder="Description" />    
@@ -58,9 +70,8 @@ class WorkoutForm extends Component {
                     <input type="number" name="duration" placeholder="Duration" />    
                 <br />
                 <input type="submit" value="Submit" />
-                <button type="submit" value="edit"></button>
             </form>
-        )    
+        )
     }
     
 }

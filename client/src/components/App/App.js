@@ -11,6 +11,7 @@ import MealForm from '../MealForm/MealForm'
 import WorkoutForm from '../WorkoutForm/WorkoutForm'
 import SingleMeal from '../SingleMeal/SingleMeal'
 import SingleWorkout from '../SingleWorkout/SingleWorkout'
+import UpdateForm from '../UpdateForm/UpdateForm'
 
 
 class App extends Component {
@@ -19,6 +20,8 @@ class App extends Component {
     this.state = {
       meals: [],
       workouts: [],
+      mealId: '',
+      workoutId: '',
       selectedMeal: '',
       selectedWorkout: ''
     }
@@ -68,6 +71,19 @@ class App extends Component {
     }
   }
 
+  mealId = (mealId) => {
+    this.setState({
+      mealId
+    })
+  }
+
+  workoutId = (workoutId) => {
+    this.setState({
+      workoutId
+    })
+    console.log(this.state.workoutId)
+  }
+
   componentDidMount() {
     this.getMealsData()
     this.getWorkoutData()
@@ -108,8 +124,18 @@ class App extends Component {
           />
           <Route 
             path='/add-workout'
-            component={WorkoutForm}
+            render={(props) => (
+              <WorkoutForm {...props}
+                // workoutId={this.state.workoutId}
+            />)}
           />
+          {/* <Route 
+            path='/edit-workout'
+            render={(props) => (
+              <UpdateForm {...props}
+                
+            />)}
+          /> */}
           <Route 
             path='/meals/:id'
             render={(props) => (
@@ -122,6 +148,7 @@ class App extends Component {
             render={(props) => (
             <SingleWorkout {...props}
               selectWorkout={this.state.selectedWorkout}
+              workoutId={this.workoutId}
             />)}
           />
         </Switch>  
