@@ -37,19 +37,27 @@ class UpdateWorkoutForm extends Component {
             submitted: true
         })
     }
+
+    deleteWorkout = async () => {
+        let deleteId = this.props.workoutToUpdate.id
+        await axios.delete(`/workouts/${deleteId}`)
+    }
     
     render() {
         console.log(this.props.workoutToUpdate)
         return(
-            <form onChange={this.handleChange} onSubmit={this.handleEditWorkoutSubmit}>
-                    <input type="text" defaultValue={this.state.activity} name="activity" placeholder="Type" /> 
-                <br />
-                    <textarea name="description" defaultValue={this.state.description} placeholder="Description" />    
-                <br />
-                    <input type="number" defaultValue={this.state.duration} name="duration" placeholder="Duration" />    
-                <br />
-                <input type="submit" value="Edit" />
-            </form>
+            <div>
+                <form onChange={this.handleChange} onSubmit={this.handleEditWorkoutSubmit}>
+                        <input type="text" defaultValue={this.state.activity} name="activity" placeholder="Type" /> 
+                    <br />
+                        <textarea name="description" defaultValue={this.state.description} placeholder="Description" />    
+                    <br />
+                        <input type="number" defaultValue={this.state.duration} name="duration" placeholder="Duration" />    
+                    <br />
+                    <input type="submit" value="Edit" />
+                </form>
+                <button onClick={this.deleteWorkout}>Delete</button>
+            </div>
         )
     }
 }

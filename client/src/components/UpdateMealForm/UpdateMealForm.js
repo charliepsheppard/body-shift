@@ -42,21 +42,29 @@ class UpdateMealForm extends Component {
         })
     }
 
+    deleteMeal = async () => {
+        let deleteId = this.props.mealToUpdate.id
+        await axios.delete(`/meals/${deleteId}`)
+    }
+
     render() {
         return(
-            <form onChange={this.handleChange} onSubmit={this.handleEditMealSubmit}>
-                <input type="text" defaultValue={this.state.name} name="name" placeholder="Name" />   
-                <br />
-                <input type="text" defaultValue={this.state.ingredients} name="ingredients" placeholder="Ingredients" />
-                <br />
-                <input type="number" defaultValue={this.state.prep} name="prep" placeholder="Prep Time" />
-                <br />
-                <input type="number" defaultValue={this.state.cooktime} name="cooktime" placeholder="Cook Time" />
-                <br />
-                <input type="number" defaultValue={this.state.calories} name="calories" placeholder="Calories" />
-                <br />
-                <input type="submit" value="Edit" />
-            </form>
+            <div>
+                <form onChange={this.handleChange} onSubmit={this.handleEditMealSubmit}>
+                    <input type="text" defaultValue={this.state.name} name="name" placeholder="Name" />   
+                    <br />
+                    <input type="text" defaultValue={this.state.ingredients} name="ingredients" placeholder="Ingredients" />
+                    <br />
+                    <input type="number" defaultValue={this.state.prep} name="prep" placeholder="Prep Time" />
+                    <br />
+                    <input type="number" defaultValue={this.state.cooktime} name="cooktime" placeholder="Cook Time" />
+                    <br />
+                    <input type="number" defaultValue={this.state.calories} name="calories" placeholder="Calories" />
+                    <br />
+                    <input type="submit" value="Edit" />
+                </form>
+                <button onClick={this.deleteMeal}>Delete</button>
+            </div>
         )
     }
 }
