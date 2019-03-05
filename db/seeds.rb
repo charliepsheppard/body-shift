@@ -20,6 +20,6 @@ workouts = Workout.create([
     {activity: "Squats", description: "Max weight 100lbs", duration: 20}
 ])
 
-users = User.create([
-    {name: "Charlie", email: "charlie@charlie.com", password: "1234567"}
-])
+# users = User.create([
+#     {name: "Charlie", email: "charlie@charlie.com", password: "1234567"}
+# ])

@@ -10,7 +10,8 @@ class UpdateWorkoutForm extends Component {
             activity: this.props.workoutToUpdate.activity,
             description: this.props.workoutToUpdate.description,
             duration: this.props.workoutToUpdate.duration,
-            updated: false
+            updated: false,
+            deleted: false
         }
         
     }
@@ -42,12 +43,15 @@ class UpdateWorkoutForm extends Component {
     deleteWorkout = async () => {
         let deleteId = this.props.workoutToUpdate.id
         await axios.delete(`/workouts/${deleteId}`)
+        this.setState({
+            deleted: true
+        })
     }
     
     render() {
-        console.log(this.props.workoutToUpdate)
         const redirectToSingleWorkout = this.state.updated
-        if (redirectToSingleWorkout == true) {
+        const redirectAfterDelete = this.state.deleted
+        if (redirectToSingleWorkout || redirectAfterDelete == true) {
             return <Redirect to='/workouts' />
         }
         return(

@@ -55,7 +55,7 @@ class UpdateMealForm extends Component {
     render() {
         const redirectToMeals = this.state.submitted
         const redirectAfterDelete = this.state.deleted
-        if (redirectToMeals == true) {
+        if (redirectToMeals || redirectAfterDelete == true) {
             return <Redirect to='/meals' />    
         }
         return(

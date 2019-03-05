@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import './MealsList.css'
 import axios from 'axios'
 
 class MealsList extends Component {
@@ -40,8 +41,8 @@ class MealsList extends Component {
             )
         })
         return(
-            <div>
-                <Link to='/add-meal'><button>Add A Meal</button></Link>
+            <div className='meal-list'>
+                <Link to='/add-meal'><button className='add-button'>Add A Meal</button></Link>
                 <h1>{meals}</h1>
             </div>
         ) 
