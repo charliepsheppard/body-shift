@@ -30,13 +30,14 @@ class MealsList extends Component {
         // console.log(this.state.meals)
         const meals = this.state.meals.map((meal, key) => {
             return (
-                <div key={key}>
+                <div key={key} className='individual-item'>
                     <Link 
                         id={meal.id}
                         to={{pathname: `/meals/${meal.id}`, state: meal}}
                         onClick={this.props.selectMeal}
-                        className='individual-item'>
-                    {meal.name}
+                        className='individual-item-link'>
+                        <h1 className='name'>{meal.name}</h1>
+                        <p className='ingredients'>{meal.ingredients}</p>
                     </Link>
                 </div>
             )
@@ -44,7 +45,7 @@ class MealsList extends Component {
         return(
             <div className='item-list'>
                 <Link to='/add-meal'><button className='add-button'>Add A Meal</button></Link>
-                <h1>{meals}</h1>
+                {meals}
             </div>
         ) 
     }

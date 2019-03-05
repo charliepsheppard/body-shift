@@ -51,21 +51,21 @@ class UpdateWorkoutForm extends Component {
     render() {
         const redirectToSingleWorkout = this.state.updated
         const redirectAfterDelete = this.state.deleted
-        if (redirectToSingleWorkout || redirectAfterDelete == true) {
+        if (redirectToSingleWorkout || redirectAfterDelete === true) {
             return <Redirect to='/workouts' />
         }
         return(
-            <div>
+            <div className='form'>
                 <form onChange={this.handleChange} onSubmit={this.handleEditWorkoutSubmit}>
-                        <input type="text" defaultValue={this.state.activity} name="activity" placeholder="Type" /> 
+                        <input type="text" defaultValue={this.state.activity} name="activity" placeholder="Type" className='form-input' /> 
                     <br />
-                        <textarea name="description" defaultValue={this.state.description} placeholder="Description" />    
+                        <input type="number" defaultValue={this.state.duration} name="duration" placeholder="Duration" className='form-input' />  
+                    <br /> 
+                        <textarea name="description" defaultValue={this.state.description} placeholder="Description" className='form-input' />   
                     <br />
-                        <input type="number" defaultValue={this.state.duration} name="duration" placeholder="Duration" />    
-                    <br />
-                    <input type="submit" value="Edit" />
+                    <input type="submit" value="Edit" className='form-button' />
                 </form>
-                <button onClick={this.deleteWorkout}>Delete</button>
+                <button onClick={this.deleteWorkout} className='form-button'>Delete</button>
             </div>
         )
     }

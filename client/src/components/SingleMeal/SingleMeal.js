@@ -17,9 +17,9 @@ class SingleMeal extends Component {
     
     render() {
         console.log(this.props.location.state.name)
-        if (this.state.editClicked == false) {
+        if (this.state.editClicked === false) {
             return(
-                <div>
+                <div className='single-page'>
                     <h1>{this.props.location.state.name}</h1>
                     <p>{this.props.location.state.ingredients}</p>
                     <p>{this.props.location.state.prep}</p>
@@ -28,9 +28,9 @@ class SingleMeal extends Component {
                     <button onClick={this.renderForm}>Edit</button>
                 </div>    
             )    
-        } else if (this.state.editClicked == true) {
+        } else if (this.state.editClicked === true) {
             return(
-                <div>
+                <div className='single-page'>
                     <div>
                         <UpdateMealForm mealToUpdate={this.props.location.state} />
                     </div>

@@ -29,13 +29,14 @@ class WorkoutsList extends Component {
     render() {
         const workouts = this.state.workouts.map((workout, key) => {
             return(
-                <div key={key}>
+                <div key={key} className='individual-item'>
                     <Link 
                         id={workout.id}
                         to={{pathname: `/workouts/${workout.id}`, state: workout}}
                         onClick={this.props.selectWorkout}
-                        className='individual-item'>
-                        {workout.activity}
+                        className='individual-item-link'>
+                        <h1>{workout.activity}</h1>
+                        <p>{workout.description}</p>
                     </Link>
                 </div>
             )
@@ -43,7 +44,7 @@ class WorkoutsList extends Component {
         return(
                 <div className='item-list'>
                     <Link to='/add-workout'><button className='add-button'>Add A Workout</button></Link>
-                    <h1>{workouts}</h1>
+                    {workouts}
                 </div>
             )
     }

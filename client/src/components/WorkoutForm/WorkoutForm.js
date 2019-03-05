@@ -43,19 +43,21 @@ class WorkoutForm extends Component {
     render() {
         console.log(this.state)  
         const redirectToWorkouts = this.state.submitted
-        if (redirectToWorkouts == true) {
+        if (redirectToWorkouts === true) {
             return <Redirect to='/workouts' />
         }
         return (
-            <form onChange={this.handleChange} onSubmit={this.handleNewWorkoutSubmit}>
-                    <input type="text" name="activity" placeholder="Type" /> 
-                <br />
-                    <textarea name="description" placeholder="Description" />    
-                <br />
-                    <input type="number" name="duration" placeholder="Duration" />    
-                <br />
-                <input type="submit" value="Submit" />
-            </form>
+            <div className='form'>
+                <form onChange={this.handleChange} onSubmit={this.handleNewWorkoutSubmit}>
+                        <input type="text" name="activity" placeholder="Type" className='form-input' /> 
+                    <br />
+                        <input type="number" name="duration" placeholder="Duration" className='form-input' />
+                    <br /> 
+                        <textarea name="description" placeholder="Description" className='form-input' />   
+                    <br />
+                    <input type="submit" value="Submit" className='form-button' />
+                </form>
+            </div>
         )
     }
     

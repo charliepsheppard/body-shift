@@ -1,9 +1,5 @@
-.App {
-  background-color: #EEEEEE;
-  height: 100vh;
-}
 
-.add-button {
+.add-button, .form-button {
   height: 4em;
   width: 10em;
   margin-top: 3em;
@@ -11,21 +7,50 @@
   cursor: pointer;
 }
 
-.add-button:hover {
+.add-button:hover, .form-button:hover {
   background-color: #E52C20;
 }
 
 .item-list {
   display: flex;
   flex-direction: column;
+  justify-content:space-between;
   align-items: center;
 
   -webkit-animation: fadein 1s;
 }
 
 .individual-item {
+  background-color: #E2D4B7;
+  margin-top: .8em;
+  padding: .5em;
+  width: 80%;
+}
+
+.individual-item-link {
   text-decoration: none;
   color: #000;
+}
+
+.single-page {
+  -webkit-animation: fadein 1s;
+}
+
+.form {
+  text-align: center;
+  margin-top: 3em;
+
+  -webkit-animation: fadein 1s;
+}
+
+.form-input {
+  height: 3em;
+  width: 18em;
+  margin-top: .5em;
+  font-size: .8em;
+  padding-left: 1em;
+  background-color: #E2D4B7;
+  border: none;
 }
 
 @keyframes fadein {

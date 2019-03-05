@@ -55,25 +55,25 @@ class UpdateMealForm extends Component {
     render() {
         const redirectToMeals = this.state.submitted
         const redirectAfterDelete = this.state.deleted
-        if (redirectToMeals || redirectAfterDelete == true) {
+        if (redirectToMeals || redirectAfterDelete === true) {
             return <Redirect to='/meals' />    
         }
         return(
-            <div>
+            <div className='form'>
                 <form onChange={this.handleChange} onSubmit={this.handleEditMealSubmit}>
-                    <input type="text" defaultValue={this.state.name} name="name" placeholder="Name" />   
+                    <input type="text" defaultValue={this.state.name} name="name" placeholder="Name" className='form-input' />   
                     <br />
-                    <input type="text" defaultValue={this.state.ingredients} name="ingredients" placeholder="Ingredients" />
+                    <input type="text" defaultValue={this.state.ingredients} name="ingredients" placeholder="Ingredients" className='form-input' />
                     <br />
-                    <input type="number" defaultValue={this.state.prep} name="prep" placeholder="Prep Time" />
+                    <input type="number" defaultValue={this.state.prep} name="prep" placeholder="Prep Time" className='form-input' />
                     <br />
-                    <input type="number" defaultValue={this.state.cooktime} name="cooktime" placeholder="Cook Time" />
+                    <input type="number" defaultValue={this.state.cooktime} name="cooktime" placeholder="Cook Time" className='form-input' />
                     <br />
-                    <input type="number" defaultValue={this.state.calories} name="calories" placeholder="Calories" />
+                    <input type="number" defaultValue={this.state.calories} name="calories" placeholder="Calories" className='form-input' />
                     <br />
-                    <input type="submit" value="Edit" />
+                    <input type="submit" value="Edit" className='form-button' />
                 </form>
-                <button onClick={this.deleteMeal}>Delete</button>
+                <button onClick={this.deleteMeal} className='form-button'>Delete</button>
             </div>
         )
     }
