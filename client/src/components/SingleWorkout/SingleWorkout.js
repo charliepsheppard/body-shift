@@ -5,6 +5,9 @@ import UpdateWorkoutForm from '../UpdateWorkoutForm/UpdateWorkoutForm'
 class SingleWorkout extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            editClicked: false
+        }
     }
 
     // renderEditForm = () => {
@@ -13,27 +16,29 @@ class SingleWorkout extends Component {
     //     )
     // }
 
+    renderForm = () => {
+        this.setState({
+            editClicked:true
+        })
+    }
 
     render() {
-
-        console.log(this.props.location.activity)
-        return(
+        if (this.state.editClicked == false) {
+            return(
             <div>
-                <div>
                 <h1>{this.props.location.state.activity}</h1>
                 <p>{this.props.location.state.description}</p>
                 <p>{this.props.location.state.duration}</p>
-                </div>
-                {/* <Link to={`/workouts/${this.props.selectWorkout.id}`}> */}
-                    {/* <button onClick={() => {this.props.workoutId(this.props.selectedWorkout)}}>Edit</button> */}
-                    {/* <button onClick={() => {this.renderEditForm()}}>Edit</button> */}
-                    
-                {/* </Link> */}
+                <button onClick={this.renderForm}>Edit</button>
+            </div>
+            )
+        } else if (this.state.editClicked == true) {
+            return (
                 <div>
                     <UpdateWorkoutForm workoutToUpdate={this.props.location.state} />
                 </div>
-            </div>
-        )    
+            )
+        }   
     }
     
 }
