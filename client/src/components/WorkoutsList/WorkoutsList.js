@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import './WorkoutsList.css'
 import axios from 'axios'
 
 class WorkoutsList extends Component {
@@ -32,15 +33,16 @@ class WorkoutsList extends Component {
                     <Link 
                         id={workout.id}
                         to={{pathname: `/workouts/${workout.id}`, state: workout}}
-                        onClick={this.props.selectWorkout}>
+                        onClick={this.props.selectWorkout}
+                        className='individual-item'>
                         {workout.activity}
                     </Link>
                 </div>
             )
         })
         return(
-                <div>
-                    <Link to='/add-workout'><button>Add A Workout</button></Link>
+                <div className='item-list'>
+                    <Link to='/add-workout'><button className='add-button'>Add A Workout</button></Link>
                     <h1>{workouts}</h1>
                 </div>
             )

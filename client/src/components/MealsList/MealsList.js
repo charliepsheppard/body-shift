@@ -34,14 +34,15 @@ class MealsList extends Component {
                     <Link 
                         id={meal.id}
                         to={{pathname: `/meals/${meal.id}`, state: meal}}
-                        onClick={this.props.selectMeal}>
+                        onClick={this.props.selectMeal}
+                        className='individual-item'>
                     {meal.name}
                     </Link>
                 </div>
             )
         })
         return(
-            <div className='meal-list'>
+            <div className='item-list'>
                 <Link to='/add-meal'><button className='add-button'>Add A Meal</button></Link>
                 <h1>{meals}</h1>
             </div>
