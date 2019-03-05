@@ -6,11 +6,27 @@ class WorkoutsList extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
+            workouts: []
         }
     }
+
+    getWorkoutData = async () => {
+        try {
+          const resp = await axios.get('/workouts')
+          const {workouts} = resp.data
+          this.setState({workouts})
+        }catch(e) {
+          console.log(e.message)
+        }
+      }
+
+    componentDidMount() {
+    this.getWorkoutData()
+     
+    }
+
     render() {
-        const workouts = this.props.workouts.map((workout, key) => {
+        const workouts = this.state.workouts.map((workout, key) => {
             return(
                 <div key={key}>
                     <Link 

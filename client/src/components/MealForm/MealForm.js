@@ -3,8 +3,8 @@ import {Redirect} from 'react-router-dom'
 import axios from 'axios'
 
 class MealForm extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             name: '',
             ingredients: '',
@@ -25,9 +25,9 @@ class MealForm extends Component {
         })
     }
 
-    handleSubmit = (e) => {
+    handleSubmit = async (e) => {
         e.preventDefault()
-        this.addMeal()
+        await this.addMeal()
         this.setState({
             submitted: true
         })
@@ -36,7 +36,8 @@ class MealForm extends Component {
     render() {
         const redirectToMeals = this.state.submitted
         if (redirectToMeals == true) {
-            return <Redirect to='/meals' />
+            return <Redirect to='/meals' /> 
+            
         }
         return(
             <form onChange={this.handleChange} onSubmit={this.handleSubmit}>

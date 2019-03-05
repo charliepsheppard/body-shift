@@ -1,13 +1,33 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import axios from 'axios'
 
 class MealsList extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            meals: []
+        }
+    }
+
+    getMealsData = async () => {
+        try {
+          const resp = await axios.get('/meals')
+          const {meals} = resp.data
+          this.setState({meals})
+        }catch(e) {
+          console.log(e.message)
+        }
+    }
+
+    componentDidMount() {
+        this.getMealsData()
+     
     }
 
     render() {
-        const meals = this.props.meals.map((meal, key) => {
+        // console.log(this.state.meals)
+        const meals = this.state.meals.map((meal, key) => {
             return (
                 <div key={key}>
                     <Link 

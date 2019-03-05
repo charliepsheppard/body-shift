@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import axios from 'axios'
 
 class UpdateWorkoutForm extends Component {
@@ -9,7 +10,7 @@ class UpdateWorkoutForm extends Component {
             activity: this.props.workoutToUpdate.activity,
             description: this.props.workoutToUpdate.description,
             duration: this.props.workoutToUpdate.duration,
-            submitted: false
+            updated: false
         }
         
     }
@@ -34,7 +35,7 @@ class UpdateWorkoutForm extends Component {
             activity: updatedWorkout.activity,
             description: updatedWorkout.description,
             duration: updatedWorkout.duration,
-            submitted: true
+            updated: true
         })
     }
 
@@ -45,6 +46,10 @@ class UpdateWorkoutForm extends Component {
     
     render() {
         console.log(this.props.workoutToUpdate)
+        const redirectToSingleWorkout = this.state.updated
+        if (redirectToSingleWorkout == true) {
+            return <Redirect to='/workouts' />
+        }
         return(
             <div>
                 <form onChange={this.handleChange} onSubmit={this.handleEditWorkoutSubmit}>

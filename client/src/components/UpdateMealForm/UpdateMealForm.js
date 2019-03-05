@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import axios from 'axios'
 
 class UpdateMealForm extends Component {
@@ -10,7 +11,8 @@ class UpdateMealForm extends Component {
             prep: this.props.mealToUpdate.prep,
             cooktime: this.props.mealToUpdate.cooktime,
             calories: this.props.mealToUpdate.calories,
-            submitted: false
+            submitted: false,
+            deleted: false
         }
     }
 
@@ -45,9 +47,17 @@ class UpdateMealForm extends Component {
     deleteMeal = async () => {
         let deleteId = this.props.mealToUpdate.id
         await axios.delete(`/meals/${deleteId}`)
+        this.setState({
+            deleted: true
+        })
     }
 
     render() {
+        const redirectToMeals = this.state.submitted
+        const redirectAfterDelete = this.state.deleted
+        if (redirectToMeals == true) {
+            return <Redirect to='/meals' />    
+        }
         return(
             <div>
                 <form onChange={this.handleChange} onSubmit={this.handleEditMealSubmit}>

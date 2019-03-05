@@ -32,9 +32,9 @@ class WorkoutForm extends Component {
     //     }
     // }
 
-    handleNewWorkoutSubmit = (e) => {
+    handleNewWorkoutSubmit = async (e) => {
         e.preventDefault()
-        this.addWorkout()
+        await this.addWorkout()
         this.setState({
             submitted: true
         })
@@ -46,21 +46,6 @@ class WorkoutForm extends Component {
         if (redirectToWorkouts == true) {
             return <Redirect to='/workouts' />
         }
-        // const showDifferentForm = () => {
-        //         return(
-        //             <form onChange={this.handleChange} onSubmit={this.handleNewWorkoutSubmit}>
-        //                     <input type="text" name="activity" placeholder="Type" /> 
-        //                 <br />
-        //                     <textarea name="description" placeholder="Description" />    
-        //                 <br />
-        //                     <input type="number" name="duration" placeholder="Duration" />    
-        //                 <br />
-        //                 <input type="submit" value="Submit" />
-        //                 <button type="submit" value="Submit"></button>
-        //             </form>
-        //         )
-        //     }    
-        // }
         return (
             <form onChange={this.handleChange} onSubmit={this.handleNewWorkoutSubmit}>
                     <input type="text" name="activity" placeholder="Type" /> 

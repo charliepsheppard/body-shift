@@ -11,7 +11,6 @@ import MealForm from '../MealForm/MealForm'
 import WorkoutForm from '../WorkoutForm/WorkoutForm'
 import SingleMeal from '../SingleMeal/SingleMeal'
 import SingleWorkout from '../SingleWorkout/SingleWorkout'
-import UpdateForm from '../UpdateForm/UpdateForm'
 
 
 class App extends Component {
@@ -27,25 +26,25 @@ class App extends Component {
     }
   }
 
-  getMealsData = async () => {
-    try {
-      const resp = await axios.get('/meals')
-      const {meals} = resp.data
-      this.setState({meals})
-    }catch(e) {
-      console.log(e.message)
-    }
-  }
+  // getMealsData = async () => {
+  //   try {
+  //     const resp = await axios.get('/meals')
+  //     const {meals} = resp.data
+  //     this.setState({meals})
+  //   }catch(e) {
+  //     console.log(e.message)
+  //   }
+  // }
 
-  getWorkoutData = async () => {
-    try {
-      const resp = await axios.get('/workouts')
-      const {workouts} = resp.data
-      this.setState({workouts})
-    }catch(e) {
-      console.log(e.message)
-    }
-  }
+  // getWorkoutData = async () => {
+  //   try {
+  //     const resp = await axios.get('/workouts')
+  //     const {workouts} = resp.data
+  //     this.setState({workouts})
+  //   }catch(e) {
+  //     console.log(e.message)
+  //   }
+  // }
 
   selectMeal = async (e) => {
     try {
@@ -84,12 +83,13 @@ class App extends Component {
     console.log(this.state.workoutId)
   }
 
-  componentDidMount() {
-    this.getMealsData()
-    this.getWorkoutData()
-  }
+  // componentDidMount() {
+  //   // this.getMealsData()
+  //   this.getWorkoutData()
+  // }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <Header />
@@ -120,12 +120,14 @@ class App extends Component {
           />
           <Route 
             path='/add-meal'
-            component={MealForm}
+            render={() => (<MealForm 
+              // getMealsData={this.getMealsData}
+            />)}
           />
           <Route 
             path='/add-workout'
-            render={(props) => (
-              <WorkoutForm {...props}
+            render={() => (
+              <WorkoutForm 
                 // workoutId={this.state.workoutId}
             />)}
           />
