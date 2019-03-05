@@ -20,10 +20,12 @@ class SingleWorkout extends Component {
         if (this.state.editClicked === false) {
             return(
                 <div className='single-page'>
-                    <h1>{this.props.location.state.activity}</h1>
-                    <p>{this.props.location.state.description}</p>
-                    <p>{this.props.location.state.duration}</p>
-                    <button onClick={this.renderForm}>Edit</button>
+                    <h1 className='single-page-item'>{this.props.location.state.activity}</h1>
+                    <p className='single-page-label'>Description:</p>
+                    <p className='single-page-item'>{this.props.location.state.description}</p>
+                    <p className='single-page-label'>Duration:</p>
+                    <p className='single-page-item'>{this.props.location.state.duration}</p>
+                    <button onClick={this.renderForm} className='edit-button'>Edit</button>
                 </div>
             )
         } else if (this.state.editClicked === true) {

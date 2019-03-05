@@ -20,12 +20,16 @@ class SingleMeal extends Component {
         if (this.state.editClicked === false) {
             return(
                 <div className='single-page'>
-                    <h1>{this.props.location.state.name}</h1>
-                    <p>{this.props.location.state.ingredients}</p>
-                    <p>{this.props.location.state.prep}</p>
-                    <p>{this.props.location.state.cooktime}</p>
-                    <p>{this.props.location.state.calories}</p>
-                    <button onClick={this.renderForm}>Edit</button>
+                    <h1 className='single-page-item'>{this.props.location.state.name}</h1>
+                    <p className='single-page-label'>Ingredients:</p>
+                    <p className='single-page-item'>{this.props.location.state.ingredients}</p>
+                    <p className='single-page-label'>Prep Time:</p>
+                    <p className='single-page-item'>{this.props.location.state.prep}</p>
+                    <p className='single-page-label'>Cook Time:</p>
+                    <p className='single-page-item'>{this.props.location.state.cooktime}</p>
+                    <p className='single-page-label'>Calories:</p>
+                    <p className='single-page-item'>{this.props.location.state.calories}</p>
+                    <button onClick={this.renderForm} className='edit-button'>Edit</button>
                 </div>    
             )    
         } else if (this.state.editClicked === true) {

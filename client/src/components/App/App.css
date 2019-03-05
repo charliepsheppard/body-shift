@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Asap|Rubik');
 
-.add-button, .form-button {
+.add-button, .form-button, .edit-button {
   height: 4em;
   width: 10em;
   margin-top: 3em;
@@ -7,8 +8,12 @@
   cursor: pointer;
 }
 
-.add-button:hover, .form-button:hover {
+.add-button:hover, .form-button:hover, .edit-button:hover {
   background-color: #E52C20;
+}
+
+.edit-button {
+  margin-left: 5%;
 }
 
 .item-list {
@@ -20,7 +25,7 @@
   -webkit-animation: fadein 1s;
 }
 
-.individual-item {
+.individual-item{
   background-color: #E2D4B7;
   margin-top: .8em;
   padding: .5em;
@@ -34,6 +39,14 @@
 
 .single-page {
   -webkit-animation: fadein 1s;
+}
+
+.single-page-item, .single-page-label {
+  margin-left: 5%;
+}
+
+.single-page-label {
+  font-weight: bold;
 }
 
 .form {
