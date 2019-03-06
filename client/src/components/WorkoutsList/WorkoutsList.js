@@ -35,14 +35,15 @@ class WorkoutsList extends Component {
                         to={{pathname: `/workouts/${workout.id}`, state: workout}}
                         onClick={this.props.selectWorkout}
                         className='individual-item-link'>
-                        <h1>{workout.activity}</h1>
-                        <p>{workout.description}</p>
+                        <h1 className='activity'>{workout.activity}</h1>
+                        <p className='description'>{workout.description}</p>
                     </Link>
                 </div>
             )
         })
         return(
                 <div className='item-list'>
+                    <img src='https://i.imgur.com/4U1yUUV.jpg?1' className='list-banner' />
                     <Link to='/add-workout'><button className='add-button'>Add A Workout</button></Link>
                     {workouts}
                 </div>

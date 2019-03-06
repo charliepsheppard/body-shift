@@ -44,6 +44,8 @@ class MealsList extends Component {
         })
         return(
             <div className='item-list'>
+                <img src='https://i.imgur.com/iqHthZj.jpg?1' className='list-banner' />
+                {/* <img src='https://i.imgur.com/iqHthZj.jpg' className='list-banner' /> */}
                 <Link to='/add-meal'><button className='add-button'>Add A Meal</button></Link>
                 {meals}
             </div>
