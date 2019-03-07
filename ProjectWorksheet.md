@@ -4,16 +4,15 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Worksheet | Incomplete
-|Day 1| Wireframes / Priority Matrix / ERD / Component Hierarchy | Incomplete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 2| Pseudocode / actual code | Incomplete
-|Day 3| Initial Clickable Model  | Incomplete
-|Day 3| Auth | Incomplete
-|Day 4| Routing Complete | Incomplete
-|Day 5| MVP | Incomplete
-|Day 6| PostMVP | Incomplete
-|Day 7| Present | Incomplete
+|Day 1| Project Worksheet | Complete
+|Day 1| Wireframes / Priority Matrix / ERD / Component Hierarchy | Complete
+|Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 2| Pseudocode / actual code | Complete
+|Day 3| Initial Clickable Model  | Complete
+|Day 4| Routing Complete | Complete
+|Day 5| MVP | Complete
+|Day 6| PostMVP | Working on it
+|Day 7| Present | Complete
 
 
 ## Project Description
@@ -49,8 +48,6 @@ This is an application that is focused on being productive when it comes to your
 
 [Component Hierarchy](https://res.cloudinary.com/chucksheppard/image/upload/v1551207416/BodyShift/Component%20Hierarchy.jpg)
 
-#### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
-
 ## ERD
 
 [ERD](https://res.cloudinary.com/chucksheppard/image/upload/v1551207541/BodyShift/ERD.png)
@@ -72,15 +69,12 @@ This is an application that is focused on being productive when it comes to your
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Database | H | 3hrs|  |
-| CRUD | H | 11hrs|  |
-| Auth | H | 11hrs|  |
-| Profile page | H | 2hrs|  |
-| Meals | H | 4hrs|  |
-| Workouts | H | 4hrs|  |
-| Blog | H | 4hrs|  |
-| Add photos | H | 3hrs|  |
-| Total | H | 39hrs|  | 
+| Database | H | 3hrs| 3 |
+| CRUD | H | 11hrs| 11 |
+| Meals | H | 4hrs| 6 |
+| Workouts | H | 4hrs| 6 |
+| Styling | H | 3hrs| 5 |
+| Total | H | 39hrs| 30 | 
 
 ## Helper Functions
 
@@ -90,19 +84,6 @@ This is an application that is focused on being productive when it comes to your
 | handleSubmit | Submits form and redirects user to see their post | 
 
 
-## Code Snippet
-
-
-## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
-
-| Original Plan | Outcome | 
-| --- | :---: |  
-| Have one Book component | Split that component into BookInfo and BookInteraction as the component grew too complicated | 
-
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+ Dealing with async and await issues, as well as the conditional rendering of my forms. 
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
