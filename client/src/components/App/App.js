@@ -96,7 +96,7 @@ class App extends Component {
         <Switch>
           <Route
             exact path='/'
-            render={() => (<Login />)}
+            render={() => (<Home />)}
           />
           <Route 
             exact path='/home'
